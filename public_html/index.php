@@ -7,6 +7,11 @@ if (!$link) {
   die('Connection error: ' . mysqli_error($link));
 }
 
-echo 'Successfully connected.';
+echo 'Successfully connected to DB.';
 
 mysqli_close($link);
+?>
+
+<ul>
+  <li><a href="/phpinfo">PHPINFO</a></li>
+</ul>

@@ -9,7 +9,7 @@ services:
       - php
     volumes:
       - ./docker/nginx/conf.d/default.nginx:/etc/nginx/conf.d/default.conf
-      - ./html/:/var/www/html/
+      - ./public_html/:/var/www/html/
     networks:
       - frontend
       - backend
@@ -19,7 +19,7 @@ services:
       context: ./docker/php
     volumes:
       - ./docker/php/php.ini:/usr/local/etc/php/php.ini
-      - ./html/:/var/www/html/
+      - ./public_html/:/var/www/html/
     networks:
       - backend
 
