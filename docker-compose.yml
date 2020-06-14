@@ -4,7 +4,7 @@ services:
   nginx:
     image: nginx
     environment:
-      - VIRTUAL_HOST=site.local
+      - VIRTUAL_HOST=dev.local
     depends_on:
       - php
     volumes:
@@ -35,7 +35,7 @@ services:
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     environment:
-      - VIRTUAL_HOST=phpmyadmin.local
+      - VIRTUAL_HOST=pma.local
       - PMA_HOST=mysql
       - PMA_USER=root
       - PMA_PASSWORD=root
