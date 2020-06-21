@@ -39,6 +39,7 @@ services:
       - PMA_HOST=mysql
       - PMA_USER=root
       - PMA_PASSWORD=root
+      - UPLOAD_LIMIT=512M
     networks:
       - frontend
       - backend
